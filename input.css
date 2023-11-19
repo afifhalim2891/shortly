@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#CTA {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hamburger {
+  position: relative;
+  height: 24px;
+  width: 24px;
+}
+
+.top-line,
+.middle-line,
+.bottom-line {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #333;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transition: all 0.25s;
+}
+
+.top-line {
+  position: absolute;
+  top: 25%;
+}
+
+.bottom-line {
+  position: absolute;
+  top: 75%;
+}
+
+.open .middle-line {
+  display: none;
+}
+
+.open .top-line {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.open .bottom-line {
+  transform: rotate(-45deg) translateY(-8px);
+}
