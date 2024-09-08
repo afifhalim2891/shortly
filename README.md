@@ -2,3 +2,7 @@
 
 ### Notable Code For Reference
 - Hamburger Menu
+
+### Tech
+- HTML
+- Tailwind CSS
